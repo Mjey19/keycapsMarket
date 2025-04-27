@@ -1,17 +1,15 @@
-import Description from "./widgets/description/description";
+import { AppRoutes } from "./shared/lib/routes/routes";
+import Drawer from "./widgets/drawer/drawer";
 import Footer from "./widgets/footer/footer";
 import Header from "./widgets/header/header";
-import PreviewBlock from "./widgets/preview-block/preview-block";
-import SlidersBlock from "./widgets/sliders-block/sliders-block";
 
 function App() {
   return (
     <div className="bg-background w-full min-h-screen flex flex-col">
       <Header />
+      <Drawer />
       <main className="flex-grow">
-        <PreviewBlock />
-        <SlidersBlock />
-        <Description />
+        <AppRoutes />
       </main>
       <Footer />
     </div>

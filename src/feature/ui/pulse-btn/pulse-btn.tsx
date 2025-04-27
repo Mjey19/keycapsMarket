@@ -17,7 +17,7 @@ h-[85px]
 bg-[#ff4713] 
 text-background 
 rounded-[10px] 
-text-[32px] 
+
 font-bold 
 overflow-hidden 
 group
