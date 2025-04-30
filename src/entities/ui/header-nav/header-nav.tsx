@@ -5,10 +5,10 @@ export function HeaderNav() {
     <nav>
       <ul className="flex items-center gap-12 text-[24px] text-white">
         <li>
-          <HeaderLinkBtn link="">Клавиатуры</HeaderLinkBtn>
+          <HeaderLinkBtn link="/catalog">Клавиатуры</HeaderLinkBtn>
         </li>
         <li>
-          <HeaderLinkBtn link="">Кейкапы</HeaderLinkBtn>
+          <HeaderLinkBtn link="/catalog">Кейкапы</HeaderLinkBtn>
         </li>
         <li>
           <HeaderLinkBtn link="about">О нас</HeaderLinkBtn>

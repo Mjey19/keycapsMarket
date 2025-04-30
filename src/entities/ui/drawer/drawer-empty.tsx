@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { PulseBtn } from "../../../feature";
 
 export function DrawerEmpty() {
@@ -8,9 +9,11 @@ export function DrawerEmpty() {
       <h2 className="text-[20px] mb-5">
         Добавь сюда что-нибудь, чтоб избавиться от нее
       </h2>
-      <PulseBtn classname="h-[60px] w-72 text-[24px]">
-        Перейти к выбору
-      </PulseBtn>
+      <Link to={"/catalog"} className="w-full">
+        <PulseBtn classname="h-[60px] w-72 text-[24px]">
+          Перейти к выбору
+        </PulseBtn>
+      </Link>
     </div>
   );
 }
