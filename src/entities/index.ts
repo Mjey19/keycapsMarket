@@ -6,4 +6,5 @@ export { DrawerEmpty } from "./ui/drawer/drawer-empty";
 export { DrawerInfo } from "./ui/drawer/drawer-info";
 export { DrawerCard } from "./ui/drawer/drawer-card";
 
-export { CatalogHeader } from "./ui/catalog/catalog-header";
+export { CatalogCard } from "./ui/catalog/catalog-card";
+export { FormSection } from "./ui/catalog/form-section";

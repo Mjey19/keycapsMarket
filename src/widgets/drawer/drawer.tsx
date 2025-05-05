@@ -1,10 +1,19 @@
 import { useState } from "react";
 import { DrawerCard, DrawerEmpty, DrawerInfo } from "../../entities";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../shared/lib/store";
+import { openDrawer } from "../../feature/slices/drawer-slice/drawer-slice";
 
 export default function Drawer() {
+  const { isOpen, itemCount } = useSelector((state: RootState) => state.drawer);
+  const dispatch = useDispatch();
   const [cartList, setCartList] = useState([1]);
   return (
-    <div className=" z-50 h-screen max-h-[1040px] w-[540px] fixed top-[2px] right-5 bg-[#5C5C5C] rounded-[20px] p-10 flex flex-col">
+    <div
+      className={`${
+        isOpen ? "" : "translate-x-[100vh]"
+      } duration-500 z-50 h-screen max-h-[1040px] w-[540px] fixed top-[2px] right-5 bg-[#5C5C5C] rounded-[20px] p-10 flex flex-col`}
+    >
       <div
         className={`w-full flex ${
           cartList ? "justify-between" : "justify-end"
@@ -12,12 +21,16 @@ export default function Drawer() {
       >
         {cartList && (
           <p>
-            Ваши покупки <span>(1)</span>
+            Ваши покупки <span>({itemCount})</span>
           </p>
         )}
-        <button className="w-8 h-8 relative">
-          <span className="block absolute top-1/2 left-1/2 w-1 h-8 bg-white rounded-sm rotate-45 transform -translate-x-1/2 -translate-y-1/2"></span>
-          <span className="block absolute top-1/2 left-1/2 w-1 h-8 bg-white rounded-sm -rotate-45 transform -translate-x-1/2 -translate-y-1/2"></span>
+        <button
+          onClick={() => dispatch(openDrawer())}
+          className="w-8 h-8 relative 
+          transition-colors  group"
+        >
+          <span className="group-hover:bg-primary duration-200 block absolute top-1/2 left-1/2 w-1 h-8 bg-white rounded-sm rotate-45 transform -translate-x-1/2 -translate-y-1/2"></span>
+          <span className="group-hover:bg-primary duration-200 block absolute top-1/2 left-1/2 w-1 h-8 bg-white rounded-sm -rotate-45 transform -translate-x-1/2 -translate-y-1/2"></span>
         </button>
       </div>
       {cartList && (

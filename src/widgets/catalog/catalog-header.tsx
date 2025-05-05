@@ -1,6 +1,6 @@
 import { useState } from "react";
 const options = ["Подешевле", "Подороже", "По скидке"];
-export function CatalogHeader() {
+export default function CatalogHeader() {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState("");
 
