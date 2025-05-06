@@ -4,7 +4,7 @@ import CatalogHeader from "../../widgets/catalog/catalog-header";
 
 export default function CatalogPage() {
   return (
-    <div className="mx-[10%] mt-[120px]">
+    <div className="mx-[9%] mt-[120px]">
       <div>
         <CatalogHeader />
         <div className="flex justify-between items-start gap-10 mt-[90px]">
