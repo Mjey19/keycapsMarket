@@ -1,5 +1,5 @@
 import { FormSection } from "../../entities";
-import { FormItem } from "../../shared/lib/types/card/form";
+import { FormItem } from "../../shared/types/form";
 import Button from "../../shared/ui/button";
 const formList: FormItem[] = [
   {

@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { DrawerCardInterface } from "../../../shared/lib/types/card/card";
+import { DrawerCardInterface } from "../../../shared/types/card";
 interface DrawerState {
   isOpen: boolean;
   itemCount: number;

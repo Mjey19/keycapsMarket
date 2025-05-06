@@ -1,4 +1,4 @@
-import { DrawerCardInterface } from "../../../shared/lib/types/card/card";
+import { DrawerCardInterface } from "../../../shared/types/card";
 
 export function DrawerCard({ ...props }: DrawerCardInterface) {
   const { count, price, title } = props;

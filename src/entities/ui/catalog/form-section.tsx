@@ -1,4 +1,4 @@
-import { FormItem } from "../../../shared/lib/types/card/form";
+import { FormItem } from "../../../shared/types/form";
 import Input from "../../../shared/ui/input";
 
 export const FormSection = ({ item }: { item: FormItem }) => {
