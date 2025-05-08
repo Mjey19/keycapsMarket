@@ -3,7 +3,7 @@ import { DrawerCardInterface } from "../../../shared/types/card";
 interface DrawerState {
   isOpen: boolean;
   itemCount: number;
-  items: DrawerCardInterface[];
+  items: DrawerCardInterface[] ;
   totalPrice: number;
 }
 const initialState: DrawerState = {

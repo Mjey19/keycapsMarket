@@ -1,7 +1,8 @@
 export interface CardInterface {
-  id: number;
+  id: string;
   title: string;
   price: number;
+  category: string;
 }
 
 export interface DrawerCardInterface extends CardInterface {

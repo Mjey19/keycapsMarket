@@ -30,7 +30,7 @@ export default function Footer() {
       <div className="flex justify-between w-full h-full max-w-[80%] mx-auto">
         <div className="h-full flex flex-col justify-between">
           <img
-            src="./logo.svg"
+            src="/logo.svg"
             alt="INFIX Logo"
             className="w-[200px] h-[70px]"
           />
