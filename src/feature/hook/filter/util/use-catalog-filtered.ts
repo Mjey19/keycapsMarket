@@ -1,20 +1,19 @@
 import { useQuery } from "@tanstack/react-query";
-import { CardInterface } from "../../../../shared/types/card";
 import { jsonApiInstance } from "../../../../shared/lib/api-instance";
+import { useLocation } from "react-router-dom";
+import { CardInterface } from "../../../../shared/types/card";
 
-export function useCatalogFiltered(
-  queryParams: Record<string, string>,
-  category: string
-) {
-  const queryString = new URLSearchParams(queryParams).toString();
+export function useCatalogFiltered(category: string) {
+  const { search } = useLocation();
+  const queryParams = new URLSearchParams(search);
 
+  const queryString = queryParams.toString();
   const url = queryString
     ? `/catalog?${category}&${queryString}`
     : `/catalog?${category}`;
-  console.log(url);
 
   return useQuery({
-    queryKey: ["catalog", queryString],
+    queryKey: ["catalog", url],
     queryFn: ({ signal }) =>
       jsonApiInstance<CardInterface[]>(url, {
         method: "GET",
