@@ -12,7 +12,7 @@ export function HeaderLinkBtn({
   const navigate = useNavigate();
   return (
     <Button
-      onClick={() => navigate(`/catalog/${link}`)}
+      onClick={() => navigate(`${link}`)}
       className="w-48 h-12 duration-300 rounded-[10px] hover:bg-primary hover:text-black"
     >
       {children}

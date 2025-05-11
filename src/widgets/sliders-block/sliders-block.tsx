@@ -12,7 +12,7 @@ export default function SlidersBlock() {
         <div className="relative w-full h-[900px]  z-10 rounded-[10px] overflow-hidden p-5">
           <img
             className="absolute inset-0 w-full h-full object-cover z-0"
-            src="./games.png"
+            src="/games.png"
             alt="Games"
           />
 
@@ -29,7 +29,7 @@ export default function SlidersBlock() {
         <div className="relative w-full h-[900px]  z-10 rounded-[10px] overflow-hidden p-5">
           <img
             className="absolute inset-0 w-full h-full object-cover z-0"
-            src="./games.png"
+            src="/games.png"
             alt="Games"
           />
 

@@ -15,22 +15,22 @@ export function PreviewInfo() {
         <div className="w-full h-full relative">
           <img
             className="z-40 absolute -left-12 top-2/3"
-            src="./layer1.png"
+            src="/layer1.png"
             alt=""
           />
           <img
             className="z-30 absolute -left-8 top-28"
-            src="./layer2.png"
+            src="/layer2.png"
             alt=""
           />
           <img
             className="z-20 absolute left-24 top-10"
-            src="./layer3.png"
+            src="/layer3.png"
             alt=""
           />
           <img
             className="z-10 absolute -top-16 right-20"
-            src="./layer4.png"
+            src="/layer4.png"
             alt=""
           />
         </div>

@@ -8,7 +8,7 @@ export default function Catalog() {
   const { data, isLoading } = useCatalogList(category);
   if (data === undefined && !data)
     return (
-      <div className="text-[32px] font-bold text-center">
+      <div className="w-full text-[32px] font-bold text-center">
         Товаров по данной категории нет
       </div>
     );
