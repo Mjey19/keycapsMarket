@@ -1,6 +1,9 @@
 import { queryOptions } from "@tanstack/react-query";
 import { jsonApiInstance } from "../../../shared/lib/api-instance";
-import { CardInterface } from "../../../shared/types/card";
+import {
+  CardInterface,
+  ProductPageInterface,
+} from "../../../shared/types/card";
 
 export const catalogPostApi = {
   baseKey: "catalog",
@@ -28,7 +31,7 @@ export const catalogPostApi = {
     return queryOptions({
       queryKey: [id],
       queryFn: (meta) =>
-        jsonApiInstance<CardInterface>(`/catalog/${id}`, {
+        jsonApiInstance<ProductPageInterface>(`/catalog/${id}`, {
           method: "GET",
           signal: meta.signal,
         }),

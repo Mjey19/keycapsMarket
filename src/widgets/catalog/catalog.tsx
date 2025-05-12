@@ -6,12 +6,8 @@ import { useCatalogFiltered } from "../../feature/hook/filter/util/use-catalog-f
 export default function Catalog() {
   const { category } = useParams() as { category: string };
   const { data, isLoading } = useCatalogFiltered(category);
-  if (data === undefined && !data)
-    return (
-      <div className="w-full text-[32px] font-bold text-center">
-        Товаров по данной категории нет
-      </div>
-    );
+  
+
   if (isLoading) {
     return (
       <div className="w-full text-center text-[32px] font-bold ">
@@ -19,6 +15,12 @@ export default function Catalog() {
       </div>
     );
   }
+  if (data === undefined && !data)
+    return (
+      <div className="w-full text-[32px] font-bold text-center">
+        Товаров по данной категории нет
+      </div>
+    );
 
   return (
     <div className="w-full flex flex-wrap gap-5">

@@ -6,13 +6,18 @@ const CatalogPage = lazy(() => import("../../../pages/catalog/catalog-page"));
 const AboutPage = lazy(() => import("../../../pages/about/about-page"));
 const HomePage = lazy(() => import("../../../pages/home/home-page"));
 const ProductPage = lazy(() => import("../../../pages/product/product-page"));
+
+const FallbackLoader = () => {
+  return <div className="w-full text-center text-[32px]">Loading Page...</div>;
+};
+
 export function AppRoutes() {
   return (
     <Routes>
       <Route
         path="*"
         element={
-          <Suspense fallback={<>Loading...</>}>
+          <Suspense fallback={<FallbackLoader />}>
             <HomePage />
           </Suspense>
         }
@@ -20,7 +25,7 @@ export function AppRoutes() {
       <Route
         path="/catalog/:category"
         element={
-          <Suspense fallback={<>Loading...</>}>
+          <Suspense fallback={<FallbackLoader />}>
             <CatalogPage />
           </Suspense>
         }
@@ -28,7 +33,7 @@ export function AppRoutes() {
       <Route
         path="/products/:id"
         element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<FallbackLoader />}>
             <ProductPage />
           </Suspense>
         }
@@ -36,7 +41,7 @@ export function AppRoutes() {
       <Route
         path="/about"
         element={
-          <Suspense fallback={<>Loading...</>}>
+          <Suspense fallback={<FallbackLoader />}>
             <AboutPage />
           </Suspense>
         }

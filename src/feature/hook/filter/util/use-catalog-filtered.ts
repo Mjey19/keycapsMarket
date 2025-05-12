@@ -9,8 +9,8 @@ export function useCatalogFiltered(category: string) {
 
   const queryString = queryParams.toString();
   const url = queryString
-    ? `/catalog?${category}&${queryString}`
-    : `/catalog?${category}`;
+    ? `/catalog?category=${category}&${queryString}`
+    : `/catalog?category=${category}`;
 
   return useQuery({
     queryKey: ["catalog", url],

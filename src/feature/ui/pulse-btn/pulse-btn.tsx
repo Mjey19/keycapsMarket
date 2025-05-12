@@ -1,19 +1,14 @@
-import { ReactNode } from "react";
 import Button from "../../../shared/ui/button";
 
 export function PulseBtn({
-  children,
-  classname,
-}: {
-  children: ReactNode;
-  classname?: string;
-}) {
+  ...props
+}: React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <Button
+      {...props}
       className={`
 relative 
-w-full 
-h-[85px] 
+w-full  
 bg-[#ff4713] 
 text-background 
 rounded-[10px] 
@@ -23,10 +18,10 @@ overflow-hidden
 group
 transition-colors
 duration-500
-${classname}
+${props.className}
 `}
     >
-      <span className="relative z-10">{children}</span>
+      <span className="relative z-10">{props.children}</span>
 
       <span
         className="

@@ -9,7 +9,7 @@ export function PreviewInfo() {
           <br />
           сублимационной печати. Так что ваши картиночки <br /> не сотрутся ^_^
         </p>
-        <PulseBtn classname="text-[32px]">ХОЧУ! ХОЧУ! ХОЧУ!</PulseBtn>
+        <PulseBtn className="text-[32px] h-[85px]">ХОЧУ! ХОЧУ! ХОЧУ!</PulseBtn>
       </div>
       <div className=" w-1/2  absolute top-1/3 right-0">
         <div className="w-full h-full relative">

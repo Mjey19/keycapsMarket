@@ -37,15 +37,7 @@ export default function Drawer() {
         <div className="h-full flex flex-col flex-1 overflow-hidden">
           <div className="flex-1 overflow-y-auto max-h-full">
             {items.map((item) => {
-              return (
-                <DrawerCard
-                  key={item.id}
-                  count={1}
-                  price={1000}
-                  title="Набор кейкапов: Re:Life In A Different World From Zero"
-                  id={"1"}
-                />
-              );
+              return <DrawerCard key={item.id} {...item} />;
             })}
           </div>
 

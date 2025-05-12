@@ -3,7 +3,7 @@ import { DrawerCardInterface } from "../../../shared/types/card";
 interface DrawerState {
   isOpen: boolean;
   itemCount: number;
-  items: DrawerCardInterface[] ;
+  items: DrawerCardInterface[];
   totalPrice: number;
 }
 const initialState: DrawerState = {
@@ -27,11 +27,20 @@ export const DrawerSlice = createSlice({
       state.isOpen = !state.isOpen;
     },
     addItem: (state, action: PayloadAction<DrawerCardInterface>) => {
-      state.items = [...state.items, action.payload];
+      const product = state.items.find((item) => item.id === action.payload.id);
+      if (product) {
+        product.count++;
+      } else {
+        state.items = [...state.items, { ...action.payload, count: 1 }];
+      }
+      recalculateTotals(state);
+    },
+    deleteItem: (state, action: PayloadAction<string>) => {
+      state.items = state.items.filter((item) => item.id !== action.payload);
       recalculateTotals(state);
     },
   },
 });
 
-export const { openDrawer } = DrawerSlice.actions;
+export const { openDrawer, addItem, deleteItem } = DrawerSlice.actions;
 export default DrawerSlice.reducer;

@@ -1,7 +1,11 @@
+import { useDispatch } from "react-redux";
 import { DrawerCardInterface } from "../../../shared/types/card";
+import { deleteItem } from "../../../feature/slices/drawer-slice/drawer-slice";
 
 export function DrawerCard({ ...props }: DrawerCardInterface) {
-  const { count, price, title } = props;
+  const dispatch = useDispatch();
+  const { count, price, title, id } = props;
+
   return (
     <div className="h-[120px] w-full flex gap-[10px]  p-[10px] bg-background border border-white rounded-[15px]">
       <div className="min-w-[100px] h-[100px] bg-slate-200 rounded-[10px]"></div>
@@ -11,7 +15,10 @@ export function DrawerCard({ ...props }: DrawerCardInterface) {
             {title}
           </h2>
 
-          <button className="text-white hover:text-primary duration-200">
+          <button
+            onClick={() => dispatch(deleteItem(id))}
+            className="text-white hover:text-primary duration-200"
+          >
             <svg
               width="16"
               height="16"
