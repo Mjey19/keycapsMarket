@@ -2,6 +2,7 @@ import { DrawerCard, DrawerEmpty, DrawerInfo } from "../../entities";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../shared/lib/store";
 import { openDrawer } from "../../feature/slices/drawer-slice/drawer-slice";
+import Button from "../../shared/ui/button";
 
 export default function Drawer() {
   const { isOpen, itemCount, items } = useSelector(
@@ -24,14 +25,14 @@ export default function Drawer() {
             Ваши покупки <span>({itemCount})</span>
           </p>
         )}
-        <button
+        <Button
           onClick={() => dispatch(openDrawer())}
           className="w-8 h-8 relative 
           transition-colors  group"
         >
           <span className="group-hover:bg-primary duration-200 block absolute top-1/2 left-1/2 w-1 h-8 bg-white rounded-sm rotate-45 transform -translate-x-1/2 -translate-y-1/2"></span>
           <span className="group-hover:bg-primary duration-200 block absolute top-1/2 left-1/2 w-1 h-8 bg-white rounded-sm -rotate-45 transform -translate-x-1/2 -translate-y-1/2"></span>
-        </button>
+        </Button>
       </div>
       {itemCount !== 0 && (
         <div className="h-full flex flex-col flex-1 overflow-hidden">

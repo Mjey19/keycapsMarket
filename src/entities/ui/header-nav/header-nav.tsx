@@ -2,8 +2,8 @@ import { HeaderLinkBtn } from "../../../feature";
 
 export function HeaderNav() {
   return (
-    <nav>
-      <ul className="flex items-center gap-12 text-[24px] text-white">
+    <nav className="hidden lg:block">
+      <ul className="flex flex-col lg:flex-row items-center gap-12 text-[24px] text-white">
         <li>
           <HeaderLinkBtn link="/catalog/keyboards">Клавиатуры</HeaderLinkBtn>
         </li>

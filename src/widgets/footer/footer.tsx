@@ -26,22 +26,31 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="h-[311px] w-full bg-background py-10 border-t border-white">
-      <div className="flex justify-between w-full h-full max-w-[80%] mx-auto">
-        <div className="h-full flex flex-col justify-between">
+    <footer
+      className="min-h-[311px] w-full  bg-background py-10 border-t border-white text-center
+    lg:text-start"
+    >
+      <div
+        className="flex flex-col justify-between w-full h-full max-w-[80%] mx-auto gap-[50px]
+      lg:flex-row lg:gap-0"
+      >
+        <div
+          className="h-full flex flex-row justify-center 
+        lg:flex-col lg:justify-between"
+        >
           <img
             src="/logo.svg"
             alt="INFIX Logo"
-            className="w-[200px] h-[70px]"
+            className="w-[90px] h-8 lg:w-[200px] lg:h-[70px]"
           />
-          <p>© 2025 INFIX</p>
+          <p className="hidden lg:block">© 2025 INFIX</p>
         </div>
 
         {sections.map((section, index) => (
           <div key={index}>
             <p className="uppercase text-[20px] font-medium">{section.title}</p>
             {section.isSocial ? (
-              <ul className="flex gap-5 text-[16px] mt-7">
+              <ul className="flex lg:justify-start justify-center gap-5 text-[16px] mt-7">
                 {section.items.map((_, i) => (
                   <li
                     key={i}
