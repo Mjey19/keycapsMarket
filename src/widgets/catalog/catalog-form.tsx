@@ -67,7 +67,8 @@ export default function CatalogForm() {
   return (
     <form
       className={`transition-all duration-300 
-    ${isOpen ? "w-56 opacity-100" : "hidden w-0 opacity-0 "} 
+    ${isOpen ? "block w-56 opacity-100" : "hidden w-0 opacity-0"} 
+    lg:flex lg:flex-col lg:w-56 md:opacity-100 
     md:max-h-[1250px] flex flex-col gap-10 overflow-hidden`}
     >
       {formList.map((item, index) => (

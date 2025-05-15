@@ -22,7 +22,7 @@ export default function CatalogHeader() {
           onClick={() => dispatch(openForm())}
           className={`${
             isOpenForm && " bg-primary border-primary"
-          } duration-200 w-40 h-[50px] flex items-center justify-center font-bold gap-2 md:hidden border border-white rounded-[10px] group`}
+          } duration-200 w-40 h-[50px] flex items-center justify-center font-bold gap-2 lg:hidden border border-white rounded-[10px] group`}
         >
           <svg
             width="19"
