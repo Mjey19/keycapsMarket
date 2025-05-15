@@ -20,19 +20,19 @@ export default function MobileMenu({
           </Button>
         </div>
         <ul className=" text-[20px] text-white flex flex-col gap-12">
-          <li>
+          <li onClick={() => handleCloseMenu(false)}>
             <Link to={"/catalog/keyboards"}>Клавиатуры</Link>
           </li>
-          <li>
+          <li onClick={() => handleCloseMenu(false)}>
             <Link to={"/catalog/keycaps"}>Кейкапы</Link>
           </li>
-          <li>
+          <li onClick={() => handleCloseMenu(false)}>
             <Link to={"/about"}>О нас</Link>
           </li>
         </ul>
       </div>
       <div className="w-full h-24 border-b border-white">
-        <img src="./grass.svg" className="w-full h-full object-cover" alt="" />
+        <img src="/grass.svg" className="w-full h-full object-cover" alt="" />
       </div>
     </div>
   );

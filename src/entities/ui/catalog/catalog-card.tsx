@@ -7,11 +7,11 @@ export function CatalogCard({ ...props }: CardInterface) {
   return (
     <div
       onClick={() => navigate(`/products/${id}`)}
-      className="w-[30%] h-[293px] duration-200 border border-white/50 rounded-[15px] p-[15px] cursor-pointer hover:border-white "
+      className="min-w-[300px] sm:w-full h-[293px] duration-200 border border-white/50 rounded-[15px] p-[15px] cursor-pointer hover:border-white "
     >
       <div className="h-40 w-full bg-gray-200"></div>
-      <div className="mt-[15px]">
-        <p className="text-[20px]">{title}</p>
+      <div className="mt-[15px] flex flex-col gap-3">
+        <p className="text-[16px] h-10">{title}</p>
         <span className="text-[20px] font-medium">{price} ₽</span>
       </div>
     </div>

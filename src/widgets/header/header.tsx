@@ -11,7 +11,7 @@ export default function Header() {
     return <MobileMenu handleCloseMenu={setIsMobileMenuOpen} />;
   return (
     <header className="w-full h-[90px] border-b border-white ">
-      <div className="h-full flex items-center justify-between mx-[10%]">
+      <div className="h-full flex items-center justify-between mx-[5%] md:mx-[10%]">
         <Button
           onClick={() => setIsMobileMenuOpen(true)}
           className="w-8 h-6 flex flex-col justify-between lg:hidden"

@@ -2,7 +2,7 @@ import { PulseBtn } from "../../../feature";
 export function PreviewInfo() {
   return (
     <div className=" md:flex md:items-center reletive">
-      <div className="max-w-[680px] z-50">
+      <div className="max-w-[680px] z-[45]">
         <h2 className="font-bold text-[54px]">Кастомные Кейкапы?!</h2>
         <p className="textp-[20px] text-[20px] sm:text-[25px] mt-11 mb-10">
           Да, мы создаем кастомные кейкапы <br /> форм-фактора Cherry методом

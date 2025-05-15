@@ -3,6 +3,8 @@ import { FormSection } from "../../entities";
 import { FormDataType, FormItem } from "../../shared/types/form";
 import Button from "../../shared/ui/button";
 import { useNavigate } from "react-router";
+import { useSelector } from "react-redux";
+import { RootState } from "../../shared/lib/store";
 const formList: FormItem[] = [
   {
     name: "Цена",
@@ -33,7 +35,9 @@ const formList: FormItem[] = [
   },
 ];
 export default function CatalogForm() {
+  const { isOpen } = useSelector((state: RootState) => state.form);
   const navigate = useNavigate();
+  console.log(isOpen);
 
   const [inputState, setInputState] = useState<FormDataType>({});
   const buildQueryParams = useCallback(
@@ -61,7 +65,11 @@ export default function CatalogForm() {
     buildQueryParams(inputState);
   }, [inputState, buildQueryParams]);
   return (
-    <form className="w-80 max-h-[1250px] flex flex-col gap-10">
+    <form
+      className={`transition-all duration-300 
+    ${isOpen ? "w-56 opacity-100" : "hidden w-0 opacity-0 "} 
+    md:max-h-[1250px] flex flex-col gap-10 overflow-hidden`}
+    >
       {formList.map((item, index) => (
         <FormSection setFormState={setInputState} key={index} item={item} />
       ))}

@@ -13,7 +13,7 @@ export default function Drawer() {
     <div
       className={`${
         isOpen ? "" : "translate-x-[100vh]"
-      } duration-500 z-50 h-screen max-h-[1040px] w-[540px] fixed top-[2px] right-5 bg-[#5C5C5C] rounded-[20px] p-10 flex flex-col`}
+      } duration-500 z-[100] h-screen max-h-[1040px] w-screen md:w-[540px] fixed top-[2px] right-0 lg:right-5 bg-[#5C5C5C] rounded-[20px] p-10 flex flex-col`}
     >
       <div
         className={`w-full flex ${

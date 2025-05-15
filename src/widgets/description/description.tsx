@@ -33,7 +33,7 @@ export default function Description() {
         </div>
       </div>
       <div className="w-full h-24 border-b border-white">
-        <img src="./grass.svg" className="w-full h-full object-cover" alt="" />
+        <img src="/grass.svg" className="w-full h-full object-cover" alt="" />
       </div>
     </div>
   );
