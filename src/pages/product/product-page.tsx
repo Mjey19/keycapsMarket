@@ -31,7 +31,7 @@ export default function ProductPage() {
   return (
     <div className="w-full mt-[90px]">
       <div className="mx-[10%] flex justify-between items-start mb-10">
-        <div className="w-[800px] h-[634px] bg-slate-100"></div>
+        <div className="w-1/2 h-[634px] bg-slate-600 rounded-md"></div>
         <div className="w-[560px]">
           <p className="font-bold text-[32px] text-white mb-9">{data?.title}</p>
           <div>
