@@ -9,7 +9,7 @@ export function DrawerEmpty() {
       <h2 className="text-[20px] mb-5">
         Добавь сюда что-нибудь, чтоб избавиться от нее
       </h2>
-      <Link to={"/catalog"} className="w-full">
+      <Link to={"/keycapsMarket/catalog"} className="w-full">
         <PulseBtn className="h-[60px] w-72 text-[24px]">
           Перейти к выбору
         </PulseBtn>

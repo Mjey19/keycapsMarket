@@ -6,7 +6,7 @@ export function CatalogCard({ ...props }: CardInterface) {
   const { price, title, id } = props;
   return (
     <div
-      onClick={() => navigate(`/products/${id}`)}
+      onClick={() => navigate(`/keycapsMarket/products/${id}`)}
       className="w-[320px] sm:w-full h-[293px] duration-200 border border-white/50 rounded-[15px] p-[15px] cursor-pointer hover:border-white "
     >
       <div className="h-40 w-full bg-gray-200"></div>

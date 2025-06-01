@@ -22,7 +22,7 @@ export function DrawerInfo() {
             </button>
           </div>
         </div>
-        <Link to={""}>
+        <Link to={"/keycapsMarket"}>
           <p className="text-[16px]">Почему заказ нельзя оформить здесь?</p>
         </Link>
       </div>
