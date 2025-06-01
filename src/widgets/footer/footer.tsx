@@ -38,7 +38,7 @@ export default function Footer() {
           className="flex flex-row justify-center lg:flex-col lg:justify-between"
         >
           <img
-            src="/logo.svg"
+            src="logo.svg"
             alt="INFIX Logo"
             className="w-[90px] h-8 lg:w-[200px] lg:h-[70px]"
           />

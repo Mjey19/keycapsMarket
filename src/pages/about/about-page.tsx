@@ -9,7 +9,7 @@ export default function AboutPage() {
               rounded-full z-0"
         />
         <div className="mt-16 flex flex-col items-center text-center text-[24px] max-w-[920px]">
-          <img className="max-w-[440px] mb-12" src="/keyboard.svg" alt="" />
+          <img className="max-w-[440px] mb-12" src="keyboard.svg" alt="" />
           <p>
             Мы — INFIX ну или просто команда энтузиастов, объединённых страстью
             к механическим клавиатурам и уникальному дизайну. Наш проект родился
@@ -29,10 +29,10 @@ export default function AboutPage() {
             стиля.
           </p>
         </div>
-        <img className="w-80 h-72" src={"/donut.svg"} alt="" />
+        <img className="w-80 h-72" src={"donut.svg"} alt="" />
       </div>
       <div className="flex gap-10 items-center justify-end mt-[100px]">
-        <img src="/dice.svg" alt="" />
+        <img src="dice.svg" alt="" />
         <div>
           <h2 className="font-bold text-[32px]">Почему выбирают нас</h2>
           <ul className="max-w-[800px] list-disc mt-[10px]">
@@ -60,10 +60,10 @@ export default function AboutPage() {
             предпочтениями.
           </p>
         </div>
-        <img className="w-80 h-72" src={"/earth.svg"} alt="" />
+        <img className="w-80 h-72" src={"earth.svg"} alt="" />
       </div>
       <div className="flex items-center gap-10 mt-32 mb-24">
-        <img className="w-80 h-72" src={"/gear.svg"} alt="" />
+        <img className="w-80 h-72" src={"gear.svg"} alt="" />
         <div>
           <h2 className="font-bold text-[32px]">Свяжитесь с нами</h2>
           <p className="text-[24px] max-w-[850px]">
