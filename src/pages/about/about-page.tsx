@@ -60,10 +60,10 @@ export default function AboutPage() {
             предпочтениями.
           </p>
         </div>
-        <img className="w-80 h-72" src={"earth.svg"} alt="" />
+        <img className="w-80 h-72" src="earth.svg" alt="" />
       </div>
       <div className="flex items-center gap-10 mt-32 mb-24">
-        <img className="w-80 h-72" src={"gear.svg"} alt="" />
+        <img className="w-80 h-72" src="gear.svg" alt="" />
         <div>
           <h2 className="font-bold text-[32px]">Свяжитесь с нами</h2>
           <p className="text-[24px] max-w-[850px]">
