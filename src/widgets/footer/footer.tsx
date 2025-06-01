@@ -35,8 +35,7 @@ export default function Footer() {
       lg:flex-row lg:gap-0"
       >
         <div
-          className="h-full flex flex-row justify-center 
-        lg:flex-col lg:justify-between"
+          className="flex flex-row justify-center lg:flex-col lg:justify-between"
         >
           <img
             src="/logo.svg"

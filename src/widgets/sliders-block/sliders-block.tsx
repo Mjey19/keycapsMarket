@@ -19,7 +19,7 @@ export default function SlidersBlock() {
           <div className="relative z-10 h-full flex flex-col justify-end">
             <div
               className="bg-background rounded-[10px] w-full h-[160px] flex flex-col items-center justify-between p-[10px]
-             lg:flex-row lg:h-20 lg:justify-center lg:gap-8"
+             lg:flex-row lg:h-20 lg:justify-center lg:gap-8 lg:w-[600px]"
             >
               <h2
                 className="text-[36px] font-bold
@@ -53,7 +53,7 @@ export default function SlidersBlock() {
           <div className="relative z-10 h-full flex flex-col justify-end">
             <div
               className="bg-background rounded-[10px] w-full h-[160px] flex flex-col items-center justify-between p-[10px]
-             lg:flex-row lg:h-20 lg:justify-center lg:gap-8"
+             lg:flex-row lg:h-20 lg:justify-center lg:gap-8 lg:w-[600px]"
             >
               <h2
                 className="text-[36px] font-bold
