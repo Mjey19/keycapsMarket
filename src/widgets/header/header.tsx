@@ -20,7 +20,7 @@ export default function Header() {
           <span className="block w-full h-[3px] bg-white rounded-sm"></span>
           <span className="block w-full h-[3px] bg-white rounded-sm"></span>
         </Button>
-        <Link to={"/keycapsMarket"}>
+        <Link to={"/keycapsMarket/"}>
           <img src={"/keycapsMarket/logo.svg"} alt="logo" />
         </Link>
         <HeaderNav />

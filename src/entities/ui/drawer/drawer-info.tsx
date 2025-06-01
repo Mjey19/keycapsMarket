@@ -15,10 +15,10 @@ export function DrawerInfo() {
           <h2 className="text-[24px]">Перейти к оформлению заказа на:</h2>
           <div className="flex flex-col gap-[10px]">
             <button className="w-full h-[60px] bg-[#335BFB] rounded-[15px] flex items-center justify-center">
-              <img src="ozon.svg" alt="" />
+              <img src="/keycapsMarket/ozon.svg" alt="" />
             </button>
             <button className="w-full h-[60px] bg-primary rounded-[15px] flex items-center justify-center">
-              <img src="ali.svg" alt="" />
+              <img src="/keycapsMarket/ali.svg" alt="" />
             </button>
           </div>
         </div>
