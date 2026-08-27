@@ -21,7 +21,7 @@ export default function Header() {
           <span className="block w-full h-[3px] bg-white rounded-sm"></span>
         </Button>
         <Link to={"/keycapsMarket/"}>
-          <img src={"/keycapsMarket/logo.svg"} alt="logo" />
+          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="logo" />
         </Link>
         <HeaderNav />
         <HeaderDrawerBtn />

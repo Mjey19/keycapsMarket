@@ -18,7 +18,7 @@ export default function Description() {
           className="mt-16 flex flex-col items-center text-center text-[16px] max-w-[920px]
         sm:text-[24px]"
         >
-          <img className="w-80 sm:max-w-[440px] mb-12" src="./keyboard.svg" alt="" />
+          <img className="w-80 sm:max-w-[440px] mb-12" src={`${import.meta.env.BASE_URL}keyboard.svg`} alt="" />
           <p>
             Мы — команда прогеров и геймеров, которые задолбались искать
             нормальные кейкапы с любимыми принтами.
@@ -33,7 +33,7 @@ export default function Description() {
         </div>
       </div>
       <div className="w-full h-24 border-b border-white">
-        <img src="grass.svg" className="w-full h-full object-cover" alt="" />
+        <img src={`${import.meta.env.BASE_URL}grass.svg`} className="w-full h-full object-cover" alt="" />
       </div>
     </div>
   );

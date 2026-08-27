@@ -32,7 +32,7 @@ export default function MobileMenu({
         </ul>
       </div>
       <div className="w-full h-24 border-b border-white">
-        <img src="/grass.svg" className="w-full h-full object-cover" alt="" />
+        <img src={`${import.meta.env.BASE_URL}grass.svg`} className="w-full h-full object-cover" alt="" />
       </div>
     </div>
   );
