@@ -10,7 +10,6 @@ const ProductPage = lazy(() => import("../../../pages/product/product-page"));
 const FallbackLoader = () => {
   return <div className="w-full text-center text-[32px]">Loading Page...</div>;
 };
-const  baseUrl = 'keycapsMarket'
 export function AppRoutes() {
   return (
     <Routes>
@@ -23,7 +22,7 @@ export function AppRoutes() {
         }
       />
       <Route
-        path={`${baseUrl}/catalog/:category`}
+        path="/catalog/:category"
         element={
           <Suspense fallback={<FallbackLoader />}>
             <CatalogPage />
@@ -31,7 +30,7 @@ export function AppRoutes() {
         }
       />
       <Route
-        path={baseUrl + "/products/:id"}
+        path="/products/:id"
         element={
           <Suspense fallback={<FallbackLoader />}>
             <ProductPage />
@@ -39,7 +38,7 @@ export function AppRoutes() {
         }
       />
       <Route
-        path={baseUrl+"/about"}
+        path="/about"
         element={
           <Suspense fallback={<FallbackLoader />}>
             <AboutPage />
